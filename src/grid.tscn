@@ -2,5 +2,6 @@
 
 [ext_resource type="Script" uid="uid://byi5lnaeumwiy" path="res://src/grid.gd" id="1_wngin"]
 
-[node name="Grid" type="Node2D"]
+[node name="Grid" type="GridContainer"]
+columns = 3
 script = ExtResource("1_wngin")

@@ -1,17 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://bds73sj4i28mi"]
+[gd_scene load_steps=3 format=3 uid="uid://bds73sj4i28mi"]
 
 [ext_resource type="Texture2D" uid="uid://cc7ldvhn1d4fb" path="res://assets/card.png" id="1_kd8v5"]
 [ext_resource type="Script" uid="uid://byc4p576vvhte" path="res://src/card.gd" id="1_oj312"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_oj312"]
-size = Vector2(270, 330)
-
-[node name="Card" type="Node2D"]
+[node name="Card" type="Control"]
+custom_minimum_size = Vector2(340, 418)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 340.0
+offset_bottom = 418.0
 script = ExtResource("1_oj312")
 
-[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
-shape = SubResource("RectangleShape2D_oj312")
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.31913653, 0.31913653)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_kd8v5")
+centered = false
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

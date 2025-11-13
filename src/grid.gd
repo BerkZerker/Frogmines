@@ -1,12 +1,14 @@
 class_name Grid
-extends Node2D
-
-const WIDTH = 4
-const HEIGHT = 4
-const CARD_SPACING = 10 # in pix
+extends GridContainer
 
 var CardScene = preload("uid://bds73sj4i28mi")
 var selected_card = null
+
+enum STATES {
+	READY,
+	SELECTED,
+	MOVING,
+}
 
 var cards = []
 

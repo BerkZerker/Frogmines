@@ -8,30 +8,33 @@
 script = ExtResource("2_fghij")
 
 [node name="Grid" parent="." instance=ExtResource("1_abcde")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 
 [node name="Card" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(170, 555)
+layout_mode = 2
 
 [node name="Card2" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(522, 545)
+layout_mode = 2
 
 [node name="Card3" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(878, 537)
+layout_mode = 2
 
 [node name="Card4" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(150, 953)
+layout_mode = 2
 
 [node name="Card5" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(504, 959)
+layout_mode = 2
 
 [node name="Card6" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(856, 957)
+layout_mode = 2
 
 [node name="Card7" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(160, 1373)
+layout_mode = 2
 
 [node name="Card8" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(502, 1375)
+layout_mode = 2
 
 [node name="Card9" parent="Grid" instance=ExtResource("3_btrx8")]
-position = Vector2(836, 1385)
+layout_mode = 2
